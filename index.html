@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iPhone 17 – Guía completa y honesta</title>
+  <meta name="description" content="Página informativa y casual sobre el iPhone 17: características, mejoras, puntos débiles y comparaciones con otros modelos y marcas." />
+  <style>
+    :root {
+      --bg: #050509;
+      --card: #111119;
+      --accent: #4f46e5;
+      --accent-soft: rgba(79, 70, 229, 0.12);
+      --text-main: #f9fafb;
+      --text-muted: #a1a1aa;
+      --border: #27272f;
+      --good: #22c55e;
+      --bad: #f97373;
+      --warn: #fbbf24;
+      --font-main: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-main);
+      background: radial-gradient(circle at top, #1f2937 0, #020617 55%);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 20px 16px 60px;
+    }
+
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    /* NAV / HEADER */
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .tag {
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      padding: 4px 12px;
+      font-size: 0.8rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0, 0, 0, 0.4);
+      color: var(--text-muted);
+    }
+
+    .tag-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--good);
+    }
+
+    /* HERO */
+
+    .hero {
+      background: linear-gradient(135deg, rgba(79, 70, 229, 0.16), rgba(15, 23, 42, 0.96));
+      border-radius: 24px;
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      padding: 24px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(260px, 1.2fr);
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4vw, 2.6rem);
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      max-width: 34rem;
+      margin-bottom: 14px;
+      font-size: 0.97rem;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .badge.accent {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .hero-meta strong {
+      color: var(--text-main);
+    }
+
+    .hero-right {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .device {
+      width: 190px;
+      height: 360px;
+      border-radius: 34px;
+      border: 1px solid rgba(249, 250, 251, 0.3);
+      background: radial-gradient(circle at top, #64748b 0, #020617 55%);
+      box-shadow: 0 28px 60px rgba(0, 0, 0, 0.7);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .device-notch {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90px;
+      height: 23px;
+      border-radius: 14px;
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .device-screen-text {
+      position: absolute;
+      bottom: 20px;
+      left: 16px;
+      right: 16px;
+      font-size: 0.8rem;
+      color: #e5e7eb;
+    }
+
+    .device-caption {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    .small-note {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      text-align: center;
+      max-width: 260px;
+    }
+
+    /* MAIN LAYOUT */
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 2.1fr) minmax(260px, 1fr);
+      gap: 20px;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      padding: 16px 16px 18px;
+      margin-bottom: 14px;
+    }
+
+    section h2 {
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+
+    section p {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    ul {
+      margin-left: 17px;
+      margin-top: 4px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    ul li + li {
+      margin-top: 4px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .pill {
+      font-size: 0.78rem;
+      padding: 3px 9px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    .pill.good {
+      border-color: var(--good);
+      color: var(--good);
+    }
+
+    .pill.bad {
+      border-color: var(--bad);
+      color: var(--bad);
+    }
+
+    .pill.warn {
+      border-color: var(--warn);
+      color: var(--warn);
+    }
+
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .spec-card {
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #020617;
+      padding: 9px 10px 8px;
+    }
+
+    .spec-label {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 3px;
+    }
+
+    .spec-value {
+      font-size: 0.98rem;
+      font-weight: 600;
+    }
+
+    .spec-note {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+
+    /* TABLAS */
+
+    .table-wrapper {
+      overflow-x: auto;
+      margin-top: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.84rem;
+      min-width: 540px;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 7px 9px;
+      text-align: left;
+    }
+
+    th {
+      background: #020617;
+      font-weight: 600;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #020617;
+    }
+
+    tbody tr:nth-child(odd) {
+      background: #030712;
+    }
+
+    .tag-good {
+      color: var(--good);
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+
+    .tag-bad {
+      color: var(--bad);
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+
+    .tag-neutral {
+      color: var(--warn);
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+
+    /* SIDEBAR */
+
+    .sidebar section {
+      margin-bottom: 12px;
+    }
+
+    .chip-colors {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .chip-color {
+      font-size: 0.78rem;
+      padding: 3px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      object-fit: cover;
+      display: block;
+      max-height: 160px;
+    }
+
+    .gallery-caption {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    footer {
+      margin-top: 26px;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 860px) {
+      body {
+        padding: 16px 12px 40px;
+      }
+
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Nota: este es un sitio informativo no oficial sobre el iPhone 17.
+       No está afiliado a Apple. Edita los textos como quieras. -->
+  <div class="page">
+    <header>
+      <div class="logo">TU NOMBRE · iPhone 17 Hub</div>
+      <div class="tag">
+        <span class="tag-dot"></span>
+        <span>Datos actuales · Tono casual</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>iPhone 17 – Todo lo bueno, lo malo y lo que debes saber</h1>
+        <p>
+          Si estás pensando en comprar el iPhone 17 (o ya lo tienes como yo),
+          aquí tienes un resumen honesto: qué trae de nuevo, dónde brilla, en qué
+          falla y cómo se compara con otros modelos y marcas de 2025.
+        </p>
+
+        <div class="hero-badges">
+          <span class="badge accent">6,3" Super Retina XDR · 120 Hz</span>
+          <span class="badge">A19 chip · Apple Intelligence</span>
+          <span class="badge">18 MP Center Stage frontal</span>
+          <span class="badge">48 MP Dual Fusion cámara trasera</span>
+        </div>
+
+        <div class="hero-meta">
+          <div><strong>Familia 2025:</strong> iPhone 17, 17 Pro, 17 Pro Max, iPhone Air</div>
+          <div><strong>Precio base aprox.:</strong> desde 799&nbsp;USD</div>
+          <div><strong>iOS:</strong> iOS 26 con funciones de IA</div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="device">
+          <div class="device-notch"></div>
+          <div class="device-screen-text">
+            iPhone 17 · 6,3" 120 Hz<br />
+            Ceramic Shield 2 · Dynamic Island<br />
+            Colores: Lavender, Sage, Mist Blue, White, Black
+          </div>
+        </div>
+        <div class="device-caption">
+          Diseño con bordes más curvos, biseles más delgados y frontal Ceramic Shield 2.
+        </div>
+        <p class="small-note">
+          Puedes cambiar este texto y el estilo para que parezca tu review personal del iPhone 17.
+        </p>
+      </div>
+    </section>
+
+    <main>
+      <!-- COLUMNA PRINCIPAL -->
+      <div>
+        <section>
+          <h2>1. Qué es exactamente el iPhone 17</h2>
+          <p>
+            El iPhone 17 es el modelo “normal” de la línea 2025. No es el Pro, pero
+            tampoco es el barato: es el punto medio que mezcla buen rendimiento,
+            cámara muy sólida y un precio algo más razonable que los Pro.
+          </p>
+          <ul>
+            <li>Pantalla de 6,3" Super Retina XDR con ProMotion hasta 120 Hz.</li>
+            <li>Ceramic Shield 2 en la parte frontal con mejor resistencia a rayones.</li>
+            <li>Cámara trasera de 48 MP Dual Fusion + ultra gran angular.</li>
+            <li>Nueva cámara frontal de 18 MP con Center Stage para fotos y video.</li>
+            <li>Chip A19 con buena potencia y batería para todo el día.</li>
+          </ul>
+
+          <div class="spec-grid">
+            <div class="spec-card">
+              <div class="spec-label">Pantalla</div>
+              <div class="spec-value">6,3" · 120 Hz</div>
+              <div class="spec-note">Super Retina XDR · hasta 3000 nits pico</div>
+            </div>
+            <div class="spec-card">
+              <div class="spec-label">Procesador</div>
+              <div class="spec-value">A19</div>
+              <div class="spec-note">Optimizado para IA y Apple Intelligence</div>
+            </div>
+            <div class="spec-card">
+              <div class="spec-label">Cámara trasera</div>
+              <div class="spec-value">48 MP Dual Fusion</div>
+              <div class="spec-note">Mejor detalle, sobre todo de día</div>
+            </div>
+            <div class="spec-card">
+              <div class="spec-label">Cámara frontal</div>
+              <div class="spec-value">18 MP</div>
+              <div class="spec-note">Center Stage para selfies y videollamadas</div>
+            </div>
+            <div class="spec-card">
+              <div class="spec-label">Batería</div>
+              <div class="spec-value">Todo el día</div>
+              <div class="spec-note">Soporta carga rápida por USB-C</div>
+            </div>
+            <div class="spec-card">
+              <div class="spec-label">Almacenamiento</div>
+              <div class="spec-value">128–512 GB aprox.</div>
+              <div class="spec-note">Depende de la región y la configuración</div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>2. Modelos de la familia iPhone 17</h2>
+          <p>
+            La línea 2025 no es solo el iPhone 17 “normal”. Apple también lanzó
+            el iPhone Air (ligero), el iPhone 17 Pro y el 17 Pro Max.
+          </p>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Modelo</th>
+                  <th>Pantalla</th>
+                  <th>Cámaras</th>
+                  <th>Chip</th>
+                  <th>Para quién</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>iPhone 17</td>
+                  <td>6,3" · 120 Hz</td>
+                  <td>48 MP Dual Fusion + ultra gran angular</td>
+                  <td>A19</td>
+                  <td class="tag-neutral">Usuario medio que quiere un iPhone “completo”</td>
+                </tr>
+                <tr>
+                  <td>iPhone Air</td>
+                  <td>6,55" aprox.</td>
+                  <td>Muy similar al 17, más ligero</td>
+                  <td>A19</td>
+                  <td class="tag-neutral">Quien quiere pantalla grande sin ir al Pro Max</td>
+                </tr>
+                <tr>
+                  <td>iPhone 17 Pro</td>
+                  <td>6,27" con 120 Hz</td>
+                  <td>Triple cámara con más zoom y ProRes/RAW</td>
+                  <td>A19 Pro</td>
+                  <td class="tag-good">Creadores de contenido, usuarios “pro”</td>
+                </tr>
+                <tr>
+                  <td>iPhone 17 Pro Max</td>
+                  <td>6,86" con 120 Hz</td>
+                  <td>Triple cámara, mejor batería</td>
+                  <td>A19 Pro</td>
+                  <td class="tag-good">Quien quiere lo mejor sin mirar precio</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>3. Lo que Apple mejoró frente a iPhones anteriores</h2>
+          <p>
+            Si vienes de un iPhone 13, 14 o incluso 15, el salto al 17 se nota
+            bastante en varios puntos:
+          </p>
+          <ul>
+            <li><strong>Pantalla más grande y fluida</strong>: de 6,1" a 6,3" y con ProMotion 120 Hz en el modelo base.</li>
+            <li><strong>Mucha más resistencia</strong>: Ceramic Shield 2 aguanta mejor rayones y golpes ligeros.</li>
+            <li><strong>Cámara frontal más inteligente</strong>: Center Stage para mantenerte centrado en selfies y videollamadas.</li>
+            <li><strong>Mejor batería y eficiencia</strong>: el A19 mejora rendimiento sin matar la autonomía.</li>
+            <li><strong>Funciones de Apple Intelligence</strong>: ayudas de IA integradas en iOS 26 (texto, fotos, organizador, etc.).</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. Puntos fuertes del iPhone 17 (lo bueno)</h2>
+          <div class="pill-row">
+            <span class="pill good">Pantalla 120 Hz en el modelo base</span>
+            <span class="pill good">Cámara trasera 48 MP muy flexible</span>
+            <span class="pill good">Cámara frontal con Center Stage</span>
+            <span class="pill good">Ecosistema Apple + Apple Intelligence</span>
+          </div>
+          <ul>
+            <li><strong>Experiencia fluida</strong>: entre el A19 y los 120 Hz, todo se siente rápido y suave.</li>
+            <li><strong>Fotos y video muy sólidos</strong>: sin ser Pro, el 17 normal saca fotos de nivel alto, sobre todo con buena luz.</li>
+            <li><strong>Selfies y videollamadas más cómodas</strong>: el encuadre automático y el sensor de 18 MP ayudan bastante.</li>
+            <li><strong>Actualizaciones de software por años</strong>: varios años de iOS garantizados.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>5. Puntos débiles y cosas polémicas</h2>
+          <div class="pill-row">
+            <span class="pill bad">Precio sigue siendo alto</span>
+            <span class="pill warn">Algunos cambios raros en cámara Pro</span>
+            <span class="pill bad">Carga rápida lejos de Android</span>
+          </div>
+          <ul>
+            <li>
+              <strong>Precio:</strong> aunque el modelo base es más barato que los Pro, sigue siendo caro
+              comparado con muchos Android con especificaciones fuertes.
+            </li>
+            <li>
+              <strong>Carga rápida normalita:</strong> Apple todavía no compite con las cargas de
+              100W+ de algunos Android. No es lento, pero tampoco “wow”.
+            </li>
+            <li>
+              <strong>En los 17 Pro/Pro Max quitaron una función de cámara</strong>:
+              no se puede usar Night mode en fotos retrato como en los 16 Pro, y mucha gente
+              lo ve como un downgrade (aunque esto afecta más a los Pro que al 17 normal).
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>6. Comparación rápida con otros gama alta</h2>
+          <p>
+            Obviamente no todo es iPhone. En 2025 el iPhone 17 compite contra muchos
+            Android potentes. Un ejemplo clásico es el OnePlus 15:
+          </p>
+
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Teléfono</th>
+                  <th>Puntos fuertes</th>
+                  <th>Puntos débiles</th>
+                  <th>Tipo de usuario</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>iPhone 17</td>
+                  <td class="tag-good">Pantalla 120 Hz, cámaras equilibradas, ecosistema Apple</td>
+                  <td class="tag-bad">Precio alto, carga rápida normal</td>
+                  <td class="tag-neutral">Quien quiere iOS y un equilibrio general</td>
+                </tr>
+                <tr>
+                  <td>iPhone 17 Pro Max</td>
+                  <td class="tag-good">Cámaras pro, hasta 2 TB de almacenamiento, soporte de software muy largo</td>
+                  <td class="tag-bad">Es de los más caros del mercado</td>
+                  <td class="tag-neutral">Usuarios que crean contenido y viven en el ecosistema Apple</td>
+                </tr>
+                <tr>
+                  <td>OnePlus 15</td>
+                  <td class="tag-good">Batería enorme, carga ultra rápida, pantalla 165 Hz</td>
+                  <td class="tag-bad">Cámara algo por detrás en algunos escenarios, ecosistema menos cerrado</td>
+                  <td class="tag-neutral">Usuarios Android que valoran batería y rendimiento bruto</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p style="font-size:0.83rem;color:var(--text-muted);margin-top:6px;">
+            En resumen: el iPhone 17 no suele ser el más barato ni el más loco en
+            especificaciones, pero gana en integración, estabilidad y soporte de software.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. ¿Vale la pena el iPhone 17 para ti?</h2>
+          <p>
+            Todo depende de desde dónde vienes y qué te importa más:
+          </p>
+          <ul>
+            <li>Si vienes de un iPhone 11, 12 o 13 → el salto es grande y se nota en todo.</li>
+            <li>Si vienes de un 14/15 → vale la pena solo si quieres la pantalla grande, 120 Hz y mejor cámara frontal.</li>
+            <li>Si estás en Android → la decisión es más de sistema operativo que de specs puras.</li>
+          </ul>
+          <p>
+            En mi opinión, el iPhone 17 es el “sweet spot” para quien quiere un iPhone nuevo
+            sin irse al precio máximo de los Pro, pero aun así quiere algo que dure años.
+          </p>
+        </section>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <section>
+          <h2>Resumen rápido</h2>
+          <p><strong>Lo mejor:</strong></p>
+          <ul>
+            <li>Pantalla 6,3" 120 Hz.</li>
+            <li>Cámara 48 MP muy versátil.</li>
+            <li>Center Stage en la cámara frontal.</li>
+            <li>Apple Intelligence e iOS 26.</li>
+          </ul>
+          <p><strong>Lo peor:</strong></p>
+          <ul>
+            <li>Precio elevado.</li>
+            <li>Carga rápida “ok” pero no brutal.</li>
+            <li>Si tienes un iPhone 16, el salto no es enorme.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Colores del iPhone 17</h2>
+          <p>Apple ofrece el iPhone 17 en varios colores suaves:</p>
+          <div class="chip-colors">
+            <span class="chip-color">Lavender</span>
+            <span class="chip-color">Sage</span>
+            <span class="chip-color">Mist Blue</span>
+            <span class="chip-color">White</span>
+            <span class="chip-color">Black</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Galería de tu iPhone 17</h2>
+          <p style="font-size:0.86rem;color:var(--text-muted);">
+            Aquí puedes mostrar fotos reales tomadas con tu teléfono
+            o fotos del diseño.
+          </p>
+
+          <div class="gallery">
+            <!-- 
+              IMPORTANTE:
+              Cambia estos src por tus propias imágenes.
+              Puedes subirlas a tu repositorio (carpeta /images)
+              y usar rutas como: src="images/iphone17-frontal.jpg"
+            -->
+            <img src="images/iphone17-frontal.jpg" alt="iPhone 17 visto de frente" />
+            <img src="images/iphone17-colores.jpg" alt="Colores del iPhone 17" />
+            <img src="images/iphone17-foto-noche.jpg" alt="Foto de noche tomada con el iPhone 17" />
+          </div>
+          <div class="gallery-caption">
+            Sube tus propias fotos y cambia las rutas de las imágenes para que esta galería muestre TU iPhone 17.
+          </div>
+        </section>
+
+        <section>
+          <h2>Tips si piensas comprarlo</h2>
+          <ul>
+            <li>Revisa ofertas de operadoras, a veces bajan bastante el precio.</li>
+            <li>Piensa bien el almacenamiento: 128 GB se llenan rápido con vídeo.</li>
+            <li>Un buen case transparente deja ver el color y lo protege.</li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      Página hecha por ti con HTML + CSS.  
+      Puedes subirla gratis a GitHub Pages y editarla cuando Apple saque nuevas funciones del iPhone 17.
+      <br />
+      <a href="https://www.apple.com/iphone-17/" target="_blank" rel="noopener noreferrer">
+        Ver página oficial del iPhone 17 en Apple.com
+      </a>
+    </footer>
+  </div>
+</body>
+</html>
