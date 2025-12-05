@@ -39,7 +39,7 @@
       margin: 0 auto;
     }
 
-    /* NAV / HEADER */
+    /* HEADER */
 
     header {
       display: flex;
@@ -279,8 +279,6 @@
       margin-top: 3px;
     }
 
-    /* TABLAS */
-
     .table-wrapper {
       overflow-x: auto;
       margin-top: 8px;
@@ -330,8 +328,6 @@
       font-size: 0.8rem;
     }
 
-    /* SIDEBAR */
-
     .sidebar section {
       margin-bottom: 12px;
     }
@@ -351,28 +347,6 @@
       color: var(--text-muted);
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 8px;
-      margin-top: 8px;
-    }
-
-    .gallery img {
-      width: 100%;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      object-fit: cover;
-      display: block;
-      max-height: 160px;
-    }
-
-    .gallery-caption {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin-top: 6px;
-    }
-
     @media (max-width: 860px) {
       body {
         padding: 16px 12px 40px;
@@ -389,8 +363,6 @@
   </style>
 </head>
 <body>
-  <!-- Nota: este es un sitio informativo no oficial sobre el iPhone 17.
-       No está afiliado a Apple. Edita los textos como quieras. -->
   <div class="page">
     <header>
       <div class="tag">
@@ -569,7 +541,7 @@
           </div>
           <ul>
             <li><strong>Experiencia fluida</strong>: entre el A19 y los 120 Hz, todo se siente rápido y suave.</li>
-            <li><strong>Fotos y video muy sólidos</strong>: sin ser Pro, el 17 normal saca fotos de nivel alto, sobre todo con buena luz.</li>
+            <li><strong>Fotos y vídeo muy sólidos</strong>: sin ser Pro, el 17 normal saca fotos de nivel alto, sobre todo con buena luz.</li>
             <li><strong>Selfies y videollamadas más cómodas</strong>: el encuadre automático y el sensor de 18 MP ayudan bastante.</li>
             <li><strong>Actualizaciones de software por años</strong>: varios años de iOS garantizados.</li>
           </ul>
@@ -579,7 +551,7 @@
           <h2>5. Puntos débiles y cosas polémicas</h2>
           <div class="pill-row">
             <span class="pill bad">Precio sigue siendo alto</span>
-            <span class="pill.warn">Algunos cambios raros en cámara Pro</span>
+            <span class="pill warn">Algunos cambios raros en cámara Pro</span>
             <span class="pill bad">Carga rápida lejos de Android</span>
           </div>
           <ul>
@@ -691,38 +663,6 @@
             <span class="chip-color">White</span>
             <span class="chip-color">Black</span>
           </div>
-        </section>
-
-        <section>
-          <h2>Galería de tu iPhone 17</h2>
-          <p style="font-size:0.86rem;color:var(--text-muted);">
-            Aquí puedes mostrar fotos reales tomadas con tu teléfono
-            o fotos del diseño.
-          </p>
-
-          <div class="gallery">
-            <!-- 
-              IMPORTANTE:
-              Cambia estos src por tus propias imágenes.
-              Puedes subirlas a tu repositorio (carpeta /images)
-              y usar rutas como: src="images/iphone17-frontal.jpg"
-            -->
-            <img src="images/iphone17-frontal.jpg" alt="iPhone 17 visto de frente" />
-            <img src="images/iphone17-colores.jpg" alt="Colores del iPhone 17" />
-            <img src="images/iphone17-foto-noche.jpg" alt="Foto de noche tomada con el iPhone 17" />
-          </div>
-          <div class="gallery-caption">
-            Sube tus propias fotos y cambia las rutas de las imágenes para que esta galería muestre TU iPhone 17.
-          </div>
-        </section>
-
-        <section>
-          <h2>Tips si piensas comprarlo</h2>
-          <ul>
-            <li>Revisa ofertas de operadoras, a veces bajan bastante el precio.</li>
-            <li>Piensa bien el almacenamiento: 128 GB se llenan rápido con vídeo.</li>
-            <li>Un buen case transparente deja ver el color y lo protege.</li>
-          </ul>
         </section>
       </aside>
     </main>
